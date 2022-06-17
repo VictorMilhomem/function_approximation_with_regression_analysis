@@ -23,7 +23,7 @@ void run_regression()
         {
             double *vector1 = malloc(number_of_values * sizeof(double));
             double *vector2 = malloc(number_of_values * sizeof(double));
-            printf("Enter the X data:\n");
+            printf("\nEnter the X data:\n");
             double val;
             for (int i = 0; i < number_of_values; i++)
             {
@@ -52,7 +52,7 @@ void run_regression()
         }
         else
         {
-            printf("\nERROR\n");
+            fprintf(stderr,"\nERROR\n");
             exit(1);
         }
 
@@ -72,7 +72,7 @@ void run_regression()
 
         else
         {
-            printf("\nERROR\n");
+            fprintf(stderr,"\nERROR\n");
             exit(1);
         }
         
