@@ -1,3 +1,0 @@
-C:/Users/victo/OneDrive/Documentos/Projects/FunctionAproxByRegression/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-C:/Users/victo/OneDrive/Documentos/Projects/FunctionAproxByRegression/cmake-build-debug/CMakeFiles/FunctionAproxByRegression.dir
-C:/Users/victo/OneDrive/Documentos/Projects/FunctionAproxByRegression/cmake-build-debug/CMakeFiles/edit_cache.dir
