@@ -11,3 +11,5 @@ add_executable(FunctionAproxByRegression
         src/regression.c
         src/regression.h
         src/run_regression.c)
+
+target_link_libraries(FunctionAproxByRegression m)

@@ -201,7 +201,7 @@ void linear_regression(double x_values[], double y_values[], int n)
     R_square = pow(coef_r, 2);
 
     // standard error of regression
-    std_err_of_reg = regression_error(y_values, x_values, coef_a, coef_b, n, id);
+    std_err_of_reg = regression_error(y_values, x_values, coef_a, coef_b, n, LIN_FLAG);
 
     // Showing the results
     printf("\n----------------Linear Regression------------------------\n");
@@ -251,13 +251,13 @@ void log_regression(double x_values[], double y_values[], int n)
 
 
     // correlation coefficient
-    coef_r = coefficient(x_values, y_values, sum_yi, coef_a, coef_b, n, COEF_R, id);
+    coef_r = coefficient(x_values, y_values, sum_yi, coef_a, coef_b, n, COEF_R, LOG_FLAG);
 
     // coefficient of determination
-    R_square = coefficient(x_values, y_values, sum_yi, coef_a, coef_b, n, R_SQUARE, id);
+    R_square = coefficient(x_values, y_values, sum_yi, coef_a, coef_b, n, R_SQUARE, LOG_FLAG);
 
     // standard error of regression
-    std_err_of_reg = regression_error(y_values, x_values, coef_a, coef_b, n, id);
+    std_err_of_reg = regression_error(y_values, x_values, coef_a, coef_b, n, LOG_FLAG);
 
     // Showing the results
 
@@ -312,12 +312,12 @@ void power_regression(double x_values[], double y_values[], int n)
 
 
     // correlation coefficient
-    coef_r = coefficient(x_values, y_values, sum_yi, coef_a, coef_b, n, COEF_R, id);
+    coef_r = coefficient(x_values, y_values, sum_yi, coef_a, coef_b, n, COEF_R, POW_FLAG);
 
     // coefficient of determination
-    R_square = coefficient(x_values, y_values, sum_yi, coef_a, coef_b, n, R_SQUARE, id);
+    R_square = coefficient(x_values, y_values, sum_yi, coef_a, coef_b, n, R_SQUARE, POW_FLAG);
 
-    std_err_of_reg = regression_error(y_values, x_values, coef_a, coef_b, n, id);
+    std_err_of_reg = regression_error(y_values, x_values, coef_a, coef_b, n, POW_FLAG);
 
     // Showing the results
 
@@ -370,12 +370,12 @@ void ab_exponential_regression(double x_values[], double y_values[], int n)
 
 
     // correlation coefficient
-    coef_r = coefficient(x_values, y_values, sum_yi, coef_a, coef_b, n, COEF_R, id);
+    coef_r = coefficient(x_values, y_values, sum_yi, coef_a, coef_b, n, COEF_R, AB_FLAG);
 
     // coefficient of determination
-    R_square = coefficient(x_values, y_values, sum_yi, coef_a, coef_b, n, R_SQUARE, id);
+    R_square = coefficient(x_values, y_values, sum_yi, coef_a, coef_b, n, R_SQUARE, AB_FLAG);
 
-    std_err_of_reg = regression_error(y_values, x_values, coef_a, coef_b, n, id);
+    std_err_of_reg = regression_error(y_values, x_values, coef_a, coef_b, n, AB_FLAG);
 
     // Showing the results
 
@@ -424,11 +424,11 @@ void hyperbolic_regression(double x_values[], double y_values[], int n)
 
     coef_a = (sum_yi / n) - (coef_b * sum_xi / n);
 
-    coef_r = coefficient(x_values, y_values, sum_yi, coef_a, coef_b, n, COEF_R, id);
+    coef_r = coefficient(x_values, y_values, sum_yi, coef_a, coef_b, n, COEF_R, HYP_FLAG);
 
-    R_square = coefficient(x_values, y_values, sum_yi, coef_a, coef_b, n, R_SQUARE, id);
+    R_square = coefficient(x_values, y_values, sum_yi, coef_a, coef_b, n, R_SQUARE, HYP_FLAG);
 
-    std_err_of_reg = regression_error(y_values, x_values, coef_a, coef_b, n, id);
+    std_err_of_reg = regression_error(y_values, x_values, coef_a, coef_b, n, HYP_FLAG);
     
     // Showing the results
 
@@ -478,11 +478,11 @@ void exponential_regression(double x_values[], double y_values[], int n)
 
     coef_a = (sum_lnyi / n) - (coef_b * sum_xi / n);
 
-    coef_r = coefficient(x_values, y_values, sum_yi, coef_a, coef_b, n, COEF_R, id);
+    coef_r = coefficient(x_values, y_values, sum_yi, coef_a, coef_b, n, COEF_R, EXP_FLAG);
 
-    R_square = coefficient(x_values, y_values, sum_yi, coef_a, coef_b, n, R_SQUARE, id);
+    R_square = coefficient(x_values, y_values, sum_yi, coef_a, coef_b, n, R_SQUARE, EXP_FLAG);
 
-    std_err_of_reg = regression_error(y_values, x_values, coef_a, coef_b, n, id);
+    std_err_of_reg = regression_error(y_values, x_values, coef_a, coef_b, n, EXP_FLAG);
     
     // Showing the results
 
